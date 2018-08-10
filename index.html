@@ -4,11 +4,11 @@
 	<meta charset="UTF-8">
 	<title>Sortmet</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/aos.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header>
+	<header id="header">
 		<div class="header__top">
 			<div class="container header__container">
 				<ul class="header__main-nav">
@@ -24,16 +24,16 @@
 				<div class="header__top-right">
 					<a href="mailto:zakaz@sortmet.ru" class="header__top-mail"><img src="img/header__mail.png" alt="header__mail.png"> zakaz@sortmet.ru</a>
 					<a href="#form_request" class="btn btn_blue header__top-feedback" data-fancybox><span>Оставить заявку</span></a>
-					<div class="header__top-hamburger-wrp">
+					<a href="#menu" class="header__top-hamburger-wrp" data-fancybox>
 						<span class="header__top-hamburger"></span>
-					</div>
+					</a>
 				</div>
 			</div>
 		</div>
 		<div class="header__bot">
 			<div class="container header__container">
 				<div class="header__bot-left">
-					<a href="#"><img src="img/main-logo.png" alt="main-logo.png"></a>
+					<a href="#"><img src="img/main-logo.png" alt="main-logo.png" class="header__main-logo"></a>
 				</div>
 				<div class="header___bot-right">
 					<div class="header__bot-feedback">
@@ -43,11 +43,568 @@
 					</div>
 					<form class="header__search">
 						<input type="text" name="search">
-						<input type="submit" class="header__search-btn">
+						<input type="submit" class="header__search-btn" value="">
 					</form>
 				</div>
 			</div>
 		</div>
 	</header>
+	<!--  Главный слайдер -->
+	<section class="main-slider">
+		<div class="main-slider__inner owl-carousel">
+			<div class="main-slider__item" style="background-image: url(img/slider__bg.jpg)">
+				<div class="container main-slider__container">
+					<h2 class="main-slider__item-ttl"><span>Металл</span> для забора</h2>
+					<ul class="main-slider__item-list">
+						<li><a href="#">Профильная труба</a></li>
+						<li><a href="#">Сетка</a></li>
+						<li><a href="#">Профнастил</a></li>
+						<li><a href="#">Уголок</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="main-slider__item" style="background-image: url(img/slider__bg.jpg)">
+				<div class="container main-slider__container">
+					<h2 class="main-slider__item-ttl"><span>Металл</span> для забора</h2>
+					<ul class="main-slider__item-list">
+						<li><a href="#">Профильная труба</a></li>
+						<li><a href="#">Сетка</a></li>
+						<li><a href="#">Профнастил</a></li>
+						<li><a href="#">Уголок</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="main-slider__item" style="background-image: url(img/slider__bg.jpg)">
+				<div class="container main-slider__container">
+					<h2 class="main-slider__item-ttl"><span>Металл</span> для забора</h2>
+					<ul class="main-slider__item-list">
+						<li><a href="#">Профильная труба</a></li>
+						<li><a href="#">Сетка</a></li>
+						<li><a href="#">Профнастил</a></li>
+						<li><a href="#">Уголок</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="main-slider__item" style="background-image: url(img/slider__bg.jpg)">
+				<div class="container main-slider__container">
+					<h2 class="main-slider__item-ttl"><span>Металл</span> для забора</h2>
+					<ul class="main-slider__item-list">
+						<li><a href="#">Профильная труба</a></li>
+						<li><a href="#">Сетка</a></li>
+						<li><a href="#">Профнастил</a></li>
+						<li><a href="#">Уголок</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- / Главный слайдер -->
+	<!-- Категории -->
+	<section class="cat">
+		<div class="container cat__container">
+			<div class="cat__inner fr">
+				<!-- Карточка категории -->
+				<a href="#" class="cat__item fi-4" style="background-image: url(img/cat__item-bg_1.jpg)">
+					<div class="cat__item-inner">
+						<div class="cat__item-img"></div>
+						<div class="cat__item-ttl">
+							Сортовой <br>
+							прокат
+						</div>
+					</div>
+				</a>
+				<!-- / Карточка категории -->
+				<!-- Карточка категории -->
+				<a href="#" class="cat__item fi-4" style="background-image: url(img/cat__item-bg_2.jpg)">
+					<div class="cat__item-inner">
+						<div class="cat__item-img"></div>
+						<div class="cat__item-ttl">
+							Листовой <br>
+							прокат
+						</div>
+					</div>
+				</a>
+				<!-- / Карточка категории -->
+				<!-- Карточка категории -->
+				<a href="#" class="cat__item fi-4" style="background-image: url(img/cat__item-bg_3.jpg)">
+					<div class="cat__item-inner">
+						<div class="cat__item-img"></div>
+						<div class="cat__item-ttl">
+							Трубы
+						</div>
+					</div>
+				</a>
+				<!-- / Карточка категории -->
+				<!-- Карточка категории -->
+				<a href="#" class="cat__item fi-4" style="background-image: url(img/cat__item-bg_4.jpg)">
+					<div class="cat__item-inner">
+						<div class="cat__item-img"></div>
+						<div class="cat__item-ttl">
+							Метизы <br>
+							и сырье
+						</div>
+					</div>
+				</a>
+				<!-- / Карточка категории -->
+				<!-- Карточка категории -->
+				<a href="#" class="cat__item fi-4" style="background-image: url(img/cat__item-bg_5.jpg)">
+					<div class="cat__item-inner">
+						<div class="cat__item-img"></div>
+						<div class="cat__item-ttl">
+							Нержавеющая <br>
+							сталь
+						</div>
+					</div>
+				</a>
+				<!-- / Карточка категории -->
+				<!-- Карточка категории -->
+				<a href="#" class="cat__item fi-4" style="background-image: url(img/cat__item-bg_6.jpg)">
+					<div class="cat__item-inner">
+						<div class="cat__item-img"></div>
+						<div class="cat__item-ttl">
+							Цветные <br>
+							металлы
+						</div>
+					</div>
+				</a>
+				<!-- / Карточка категории -->
+				<!-- Карточка категории -->
+				<a href="#" class="cat__item fi-4" style="background-image: url(img/cat__item-bg_7.jpg)">
+					<div class="cat__item-inner">
+						<div class="cat__item-img"></div>
+						<div class="cat__item-ttl">
+							Качественные <br>
+							стали
+						</div>
+					</div>
+				</a>
+				<!-- / Карточка категории -->
+				<!-- Карточка категории -->
+				<a href="#" class="cat__item fi-4" style="background-image: url(img/cat__item-bg_8.jpg)">
+					<div class="cat__item-inner">
+						<div class="cat__item-img"></div>
+						<div class="cat__item-ttl">
+							Металло- <br>
+							обработка
+						</div>
+					</div>
+				</a>
+				<!-- / Карточка категории -->
+			</div>
+			<div class="cat__btns">
+				<a href="#" class="btn btn_blue"><span>Оставить заявку</span></a>
+				<a href="#" class="btn btn_transp"><span>Запрос прайс-листа</span></a>
+			</div>
+		</div>
+	</section>
+	<!-- / Категории -->
+	<div class="adv__left-decor"></div>
+	<section class="adv">
+		
+		<div class="container adv__container">
+			<div class="adv__inner">
+				<div class="adv__top">
+					<div class="adv__item">
+						<div class="adv__item-img adv__item-img_1"></div>
+						<div class="adv__item-descr">
+							<div class="adv__item-descr-ttl">Доставка</div>
+							<div class="adv__item-descr-ttl_sub">день в день</div>
+						</div>
+					</div>
+					<div class="adv__item">
+						<div class="adv__item-img adv__item-img_2"></div>
+						<div class="adv__item-descr">
+							<div class="adv__item-descr-ttl">Цены</div>
+							<div class="adv__item-descr-ttl_sub">низкие</div>
+						</div>
+					</div>
+				</div>
+				<div class="adv__bot">
+					<div class="adv__item">
+						<div class="adv__item-img adv__item-img_3"></div>
+						<div class="adv__item-descr">
+							<div class="adv__item-descr-ttl">Оплата</div>
+							<div class="adv__item-descr-ttl_sub">на объекте</div>
+						</div>
+					</div>
+					<div class="adv__item">
+						<div class="adv__item-img adv__item-img_4"></div>
+						<div class="adv__item-descr">
+							<div class="adv__item-descr-ttl">Возим</div>
+							<div class="adv__item-descr-ttl_sub">по всей РФ</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<section class="prod">
+		<div class="container prod__container">
+			<h2 class="section__title">Также покупают</h2>
+			<div class="prod__inner owl-carousel">
+				<div class="prod__item">
+					<div class="prod__item-img" style="background-image: url(img/products__item-img_1.png);"></div>
+					<div class="prod__item-ttl">
+						Рулон <br> оцинкованный
+					</div>
+					<div class="prod__item-price">
+						2 900 Р
+					</div>
+					<a href="#" class="btn btn_transp btn_arrow"><span>Больше</span></a>
+				</div>
+				<div class="prod__item">
+					<div class="prod__item-img" style="background-image: url(img/products__item-img_2.png);"></div>
+					<div class="prod__item-ttl">
+						Рулон <br> оцинкованный
+					</div>
+					<div class="prod__item-price">
+						2 900 Р
+					</div>
+					<a href="#" class="btn btn_transp btn_arrow"><span>Больше</span></a>
+				</div>
+				<div class="prod__item">
+					<div class="prod__item-img" style="background-image: url(img/products__item-img_3.png);"></div>
+					<div class="prod__item-ttl">
+						Рулон <br> оцинкованный
+					</div>
+					<div class="prod__item-price">
+						2 900 Р
+					</div>
+					<a href="#" class="btn btn_transp btn_arrow"><span>Больше</span></a>
+				</div>
+				<div class="prod__item">
+					<div class="prod__item-img" style="background-image: url(img/products__item-img_4.png);"></div>
+					<div class="prod__item-ttl">
+						Рулон <br> оцинкованный
+					</div>
+					<div class="prod__item-price">
+						2 900 Р
+					</div>
+					<a href="#" class="btn btn_transp btn_arrow"><span>Больше</span></a>
+				</div>
+				<div class="prod__item">
+					<div class="prod__item-img" style="background-image: url(img/products__item-img_2.png);"></div>
+					<div class="prod__item-ttl">
+						Рулон <br> оцинкованный
+					</div>
+					<div class="prod__item-price">
+						2 900 Р
+					</div>
+					<a href="#" class="btn btn_transp btn_arrow"><span>Больше</span></a>
+				</div>
+			</div>
+			<a href="#" class="btn btn_transp prod__btn-more"><span>Смотреть больше товаров</span></a>
+		</div>
+	</section>
+	<section class="serv">
+		<div class="container serv__container">
+			<h2 class="section__title">Наши услуги</h2>
+			<p class="section__title_sub">Мы предлагаем Вам купить оптом и в розницу металлопрокат по выгодным ценам от производителя</p>
+			<div class="serv__inner fr">
+				<div class="serv__item fi-3" style="background-image: url(img/services__item-bg_1.jpg)">
+					<div class="serv__item-inner">
+						<div class="serv__item-ttl">
+							Перфорация металла
+						</div>
+						<div class="serv__item-descr">
+							Перфорация металла иными словами обозначает процесс штамповки изделий. В процессе выполнения...
+						</div>
+						<a href="#" class="serv__item-arrow"></a>
+					</div>
+				</div>
+				<div class="serv__item fi-3" style="background-image: url(img/services__item-bg_2.jpg)">
+					<div class="serv__item-inner">
+						<div class="serv__item-ttl">
+							Перфорация металла
+						</div>
+						<div class="serv__item-descr">
+							Перфорация металла иными словами обозначает процесс штамповки изделий. В процессе выполнения...
+						</div>
+						<a href="#" class="serv__item-arrow"></a>
+					</div>
+				</div>
+				<div class="serv__item fi-3" style="background-image: url(img/services__item-bg_3.jpg)">
+					<div class="serv__item-inner">
+						<div class="serv__item-ttl">
+							Перфорация металла
+						</div>
+						<div class="serv__item-descr">
+							Перфорация металла иными словами обозначает процесс штамповки изделий. В процессе выполнения...
+						</div>
+						<a href="#" class="serv__item-arrow"></a>
+					</div>
+				</div>
+				<div class="serv__item fi-3" style="background-image: url(img/services__item-bg_4.jpg)">
+					<div class="serv__item-inner">
+						<div class="serv__item-ttl">
+							Перфорация металла
+						</div>
+						<div class="serv__item-descr">
+							Перфорация металла иными словами обозначает процесс штамповки изделий. В процессе выполнения...
+						</div>
+						<a href="#" class="serv__item-arrow"></a>
+					</div>
+				</div>
+				<div class="serv__item fi-3" style="background-image: url(img/services__item-bg_5.jpg)">
+					<div class="serv__item-inner">
+						<div class="serv__item-ttl">
+							Перфорация металла
+						</div>
+						<div class="serv__item-descr">
+							Перфорация металла иными словами обозначает процесс штамповки изделий. В процессе выполнения...
+						</div>
+						<a href="#" class="serv__item-arrow"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="part">
+		<div class="container part__container">
+			<h2 class="section__title">Поставщики</h2>
+			<div class="part__inner owl-carousel">
+				<div class="part__item part__item_1"></div>
+				<div class="part__item part__item_2"></div>
+				<div class="part__item part__item_3"></div>
+				<div class="part__item part__item_4"></div>
+				<div class="part__item part__item_5"></div>
+				<div class="part__item part__item_1"></div>
+				<div class="part__item part__item_2"></div>
+				<div class="part__item part__item_3"></div>
+				<div class="part__item part__item_4"></div>
+				<div class="part__item part__item_5"></div>
+			</div>
+		</div>
+	</section>
+	<section class="feedback">
+		<div class="container feedback__container">
+			<h2 class="section__title">Оставьте заявку</h2>
+			<p class="section__title_sub">Мы вам поможем подобрать решение</p>
+			<form class="feedback__form">
+				<div class="feedback__form-input-wrp">
+					<input type="text" placeholder="Ваше имя" required="">
+				</div>
+				<div class="feedback__form-input-wrp">
+					<input type="text" placeholder="Ваш email" required="">
+				</div>
+				<div class="feedback__form-input-wrp">
+					<input type="submit" value="Отправить">
+				</div>
+			</form>
+		</div>
+	</section>
+	<footer>
+		<div class="container footer__container">
+			<div class="footer__top">
+				<div class="footer__col footer__list">
+					<div class="footer__list-item"><a href="#">О нас</div></a>
+					<div class="footer__list-item"><a href="#">Доставка</div></a>
+					<div class="footer__list-item"><a href="#">Оплата</div></a>
+					<div class="footer__list-item"><a href="#">Поставщики</div></a>
+				</div>
+				<div class="footer__col footer__list">
+					<div class="footer__list-item"><a href="#">ГОСТы</a></div>
+					<div class="footer__list-item"><a href="#">Вакансии</a></div>
+					<div class="footer__list-item"><a href="#">Новости</a></div>
+					<div class="footer__list-item"><a href="#">Контакты</a></div>
+				</div>
+				<div class="footer__col footer__adress">
+					<div class="footer__adress-item footer__adress-item_ttl">
+						Московская область
+					</div>
+					<div class="footer__adress-item">
+						109380, Люберцы, микрорайон Городок Б, улица 3-е Почтовое Отделение, 102
+					</div>
+				</div>
+				<div class="footer__col footer__feedback">
+					<a href="tel:74951233040" class="footer__feedback-item footer__feedback-item_tel">+7 (495) 123-30-40</a>
+					<a href="tel:78002006940" class="footer__feedback-item footer__feedback-item_tel">+7 (800) 200-69-40</a>
+					<a href="#form_call" class="footer__feedback-item footer__feedback-item_btn" data-fancybox>Заказать звонок</a>
+				</div>
+				<div class="footer__col footer__info">
+					<a href="mailto:zakaz@sortmet.ru" class="footer__info-item_mail">zakaz@sortmet.ru</a>
+					<div class="footer__info-item_schedule">
+						<div class="footer__info-item_schedule-item"><span>Пн-Пт:</span> с 9:00 до 18:00</div>
+						<div class="footer__info-item_schedule-item"><span>Сб-Вс:</span> выходной</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bot">
+				<div class="footer__copy">
+					© 2018, Сортамент
+				</div>
+				<a href="#header" class="btn btn_transp btn_arrow btn_to-top"><span>Наверх</span></a>
+			</div>
+		</div>
+		
+	</footer>
+	<!-- Popups -->
+	<!-- / Всплывающее меню -->
+	<div style="display:none">
+		<div id="menu">
+			<div class="container menu__container">
+				<h2 class="section__title">Каталог</h2>
+				<div class="menu__inner fr">
+					<div class="menu__item fi-4">
+						<div class="menu__item-ttl">
+							<img src="img/menu__item-img_1.png" alt="cat__item-img.png">
+							Сортовой <br> прокат
+						</div>
+						<div class="menu__item-list">
+							<a href="#">Арматура</a>
+							<a href="#">Балка</a>
+							<a href="#">Катанка</a>
+							<a href="#">Круг</a>
+							<a href="#">Полоса</a>
+							<a href="#">Уголок</a>
+							<a href="#">Квадрат горячекатанный</a>
+							<a href="#">Швеллер</a>
+						</div>
+					</div>
+					<div class="menu__item fi-4">
+						<div class="menu__item-ttl">
+							<img src="img/menu__item-img_2.png" alt="cat__item-img.png">
+							Листовой <br> прокат
+						</div>
+						<div class="menu__item-list">
+							<a href="#">Арматура</a>
+							<a href="#">Балка</a>
+							<a href="#">Катанка</a>
+							<a href="#">Круг</a>
+							<a href="#">Полоса</a>
+							<a href="#">Уголок</a>
+							<a href="#">Квадрат горячекатанный</a>
+							<a href="#">Швеллер</a>
+						</div>
+					</div>
+					<div class="menu__item fi-4">
+						<div class="menu__item-ttl">
+							<img src="img/menu__item-img_3.png" alt="cat__item-img.png">
+							Трубы
+						</div>
+						<div class="menu__item-list">
+							<a href="#">Арматура</a>
+							<a href="#">Балка</a>
+							<a href="#">Катанка</a>
+							<a href="#">Круг</a>
+							<a href="#">Полоса</a>
+							<a href="#">Уголок</a>
+							<a href="#">Квадрат горячекатанный</a>
+							<a href="#">Швеллер</a>
+						</div>
+					</div>
+					<div class="menu__item fi-4">
+						<div class="menu__item-ttl">
+							<img src="img/menu__item-img_4.png" alt="cat__item-img.png">
+							Метизы <br> и сырье
+						</div>
+						<div class="menu__item-list">
+							<a href="#">Арматура</a>
+							<a href="#">Балка</a>
+							<a href="#">Катанка</a>
+							<a href="#">Круг</a>
+							<a href="#">Полоса</a>
+							<a href="#">Уголок</a>
+							<a href="#">Квадрат горячекатанный</a>
+							<a href="#">Швеллер</a>
+						</div>
+					</div>
+					<div class="menu__item fi-4">
+						<div class="menu__item-ttl">
+							<img src="img/menu__item-img_5.png" alt="cat__item-img.png">
+							Нержавеющая <br> сталь
+						</div>
+						<div class="menu__item-list">
+							<a href="#">Арматура</a>
+							<a href="#">Балка</a>
+							<a href="#">Катанка</a>
+							<a href="#">Круг</a>
+							<a href="#">Полоса</a>
+							<a href="#">Уголок</a>
+							<a href="#">Квадрат горячекатанный</a>
+							<a href="#">Швеллер</a>
+						</div>
+					</div>
+					<div class="menu__item fi-4">
+						<div class="menu__item-ttl">
+							<img src="img/menu__item-img_6.png" alt="cat__item-img.png">
+							Цветные <br> металлы
+						</div>
+						<div class="menu__item-list">
+							<a href="#">Арматура</a>
+							<a href="#">Балка</a>
+							<a href="#">Катанка</a>
+							<a href="#">Круг</a>
+							<a href="#">Полоса</a>
+							<a href="#">Уголок</a>
+							<a href="#">Квадрат горячекатанный</a>
+							<a href="#">Швеллер</a>
+						</div>
+					</div>
+					<div class="menu__item fi-4">
+						<div class="menu__item-ttl">
+							<img src="img/menu__item-img_7.png" alt="cat__item-img.png">
+							Качественные <br> стали
+						</div>
+						<div class="menu__item-list">
+							<a href="#">Арматура</a>
+							<a href="#">Балка</a>
+							<a href="#">Катанка</a>
+							<a href="#">Круг</a>
+							<a href="#">Полоса</a>
+							<a href="#">Уголок</a>
+							<a href="#">Квадрат горячекатанный</a>
+							<a href="#">Швеллер</a>
+						</div>
+					</div>
+					<div class="menu__item fi-4">
+						<div class="menu__item-ttl">
+							<img src="img/menu__item-img_8.png" alt="cat__item-img.png">
+							Металло- <br> обработка
+						</div>
+						<div class="menu__item-list">
+							<a href="#">Арматура</a>
+							<a href="#">Балка</a>
+							<a href="#">Катанка</a>
+							<a href="#">Круг</a>
+							<a href="#">Полоса</a>
+							<a href="#">Уголок</a>
+							<a href="#">Квадрат горячекатанный</a>
+							<a href="#">Швеллер</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- / Всплывающее меню -->
+	<!-- Форма обратного звонка -->
+	<div style="display: none">
+		<div id="form_call" class="modal">
+			<form class="form_call__inner">
+				<h3>Заказать звонок</h3>
+				<div class="modal__input-wrp">
+					<input type="tel" placeholder="Номер телефона" required="">
+				</div>
+
+				<div class="policy__checkbox-wrp">
+					<label for="policy__checkbox">
+						<input type="checkbox" name="policy__checkbox" id="policy__checkbox">
+						<div class="checkbox__text">
+							Нажимая на кнопку Отправить, Вы соглашаетесь с правилами обработки персональных данных
+						</div>
+					</label>
+				</div>
+				
+				<button type="submit" class="btn btn_blue"><span>Оставить заявку</span></a>
+		</div>
+	</div>
+	<!-- /Форма обратного звонка -->
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
