@@ -80,7 +80,7 @@ $(window).on('load', function (){
       $('.card__seen').owlCarousel({
             nav: true,
             items: 4,
-            loop: true,
+            loop: false,
             dots: false,
             margin:10,
             navText: ["<img src='img/slider__arrow-prev.png'>", "<img src='img/slider__arrow-next.png'>"],
